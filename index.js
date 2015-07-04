@@ -4,6 +4,7 @@ exports.generate = function(dir) {
     if(dir === undefined || dir === null) {
         dir = __dirname;
     }
+    fs.mkdir(dir);
     var decks = ls(__dirname + "/decks/*.js");
     for(var i = 0, len = decks.length; i < len; i++) {
         var json = require(decks[i].full).generate();
