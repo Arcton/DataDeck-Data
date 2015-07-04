@@ -29,7 +29,6 @@ exports.generate = function() {
             var cat = rw_json[i][inputCategories[j]];
             card.categories.push(cat);
         }
-        console.log(card);
         newJSON.cards.push(card);
     }
     return newJSON;
