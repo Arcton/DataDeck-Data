@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/Arcton/DataDecks-Data/issues"
   },
-  "homepage": "https://github.com/Arcton/DataDecks-Data#readme"
+  "homepage": "https://github.com/Arcton/DataDecks-Data#readme",
+  "dependencies": {
+      "ls": "~0.1.0"
+  }
 }
