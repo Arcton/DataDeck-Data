@@ -13,12 +13,15 @@ exports.generate = function(dir) {
             var json = require(decks[i].full).generate();
             var out = JSON.stringify(json, null, 2);
             var filename = json.name.replace(" ", "_").replace("[^a-zA-Z0-9]", "");
-            fs.writeFile(dir + "/" + filename + ".json", out, function(err) {
-                if(err) {
-                    return console.log(err);
-                }
-                console.log(filename + " was saved!");
-            });
+            (function() {
+                var name = filename;
+                fs.writeFile(dir + "/" + filename + ".json", out, function(err) {
+                    if(err) {
+                        return console.log(err);
+                    }
+                    console.log(name + " was saved!");
+                });
+            })();
         }
     });
 }
