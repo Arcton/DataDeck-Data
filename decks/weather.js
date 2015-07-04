@@ -22,6 +22,7 @@ exports.generate = function() {
             name: rw_json[i].Location.replace(/\w\S*/g, function(txt){
                 return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
                 }),
+            description: "",
             categories: []
         };
         for (j = 0; j < inputCategories.length; j++) {

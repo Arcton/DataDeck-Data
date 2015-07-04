@@ -17,6 +17,7 @@ exports.generate = function() {
             var card = {
                 id: newJSON.cards.length,
                 name: rc_json.features[i].attributes.Name,
+                description: "",
                 categories: []
             };
             for (j = 0; j < inputCategories.length; j++) {
