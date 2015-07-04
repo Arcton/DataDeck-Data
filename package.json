@@ -1,0 +1,16 @@
+{
+  "name": "datadeck-data",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arcton/DataDecks-Data.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arcton/DataDecks-Data/issues"
+  },
+  "homepage": "https://github.com/Arcton/DataDecks-Data#readme"
+}
