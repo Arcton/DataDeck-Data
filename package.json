@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/Arcton/DataDecks-Data#readme",
   "dependencies": {
-      "ls": "~0.1.0"
+      "ls": "~0.1.0",
+      "csvtojson": "~0.4.0"
   }
 }
